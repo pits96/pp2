@@ -19,12 +19,8 @@
 <body>
 <h1>Pair Program 2</h1>
 <?
+include("functions.php");
 echo "PHP Array Practice";
-function printArr($array){
-    foreach ($array as $item){
-        echo $item."<br>";
-    }
-}
 $numbers=array(7,9,8,9,8,8,6);
 echo printArr($numbers);
 ?>
