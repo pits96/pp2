@@ -4,6 +4,8 @@
  * aatadina.greenriverdev.com/328/pp2
  * Pair Program 2
  */
+    ini_set('display_errors',1);
+    error_reporting(E_ALL);
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,7 +19,14 @@
 <body>
 <h1>Pair Program 2</h1>
 <?
-echo "PHP Array Practice"
+echo "PHP Array Practice";
+function printArr($array){
+    foreach ($array as $item){
+        echo $item."<br>";
+    }
+}
+$numbers=array(7,9,8,9,8,8,6);
+echo printArr($numbers);
 ?>
 </body>
 </html>
